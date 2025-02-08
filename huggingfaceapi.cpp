@@ -9,8 +9,8 @@
 HuggingFaceAPI::HuggingFaceAPI(QObject *parent)
     : QObject(parent)
 {
-    // Set your Hugging Face API token here.
-    m_apiToken = "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";
+    //obtain API key from HugingFace
+    m_apiToken = ""; 
 
     // Connect the finished signal so that any reply is handled.
     connect(&m_manager, &QNetworkAccessManager::finished,
